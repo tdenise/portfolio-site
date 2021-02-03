@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavBar } from '../components/NavBar';
+import { Jumbo } from '../components/Jumbotron';
 import { Container, Row, Col } from 'react-bootstrap';
 
-export function Resume() {
+export function Landing() {
     return (
-       <div class="resume">
+       <div class="landing">
             <NavBar />
-            <Container>
-            </Container>
+            <Jumbo />
        </div>
     );
 }

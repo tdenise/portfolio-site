@@ -1,14 +1,14 @@
 import './App.css';
-import { NavBar } from './components/NavBar';
-import { Jumbo } from './components/Jumbotron';
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Landing } from "./pages/Landing";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Jumbo />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/Landing" component={Landing}/>
+      </Switch>
+    </Router>
   );
 }
 
